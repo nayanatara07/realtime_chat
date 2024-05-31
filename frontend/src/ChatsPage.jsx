@@ -2,6 +2,8 @@ import React from 'react';
 import { MultiChatSocket, MultiChatWindow, useMultiChatLogic } from 'react-chat-engine-advanced';
 
 const ChatsPage = ({ user }) => {
+    console.log('User props:', user); // Debugging information
+
     const chatProps = useMultiChatLogic(
         process.env.REACT_APP_PRIVATE_KEY,
         user.username,
